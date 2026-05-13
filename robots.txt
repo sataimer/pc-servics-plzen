@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.pc-servis-plzen.cz/sitemap.xml
