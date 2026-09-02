@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Přechod z Windows 10 na Windows 11 | Kontrola a upgrade Plzeň</title>
+<meta name="description" content="Jak bezpečně přejít z Windows 10 na Windows 11: kompatibilita procesoru, TPM 2.0, Secure Boot, UEFI, MBR nebo GPT, licence, BitLocker a záloha dat.">
+<link rel="canonical" href="https://www.pc-servis-plzen.cz/prechod-z-windows-10-na-windows-11.html">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+<meta property="og:title" content="Přechod z Windows 10 na Windows 11 | PC servis Plzeň">
+<meta property="og:description" content="Praktický kontrolní seznam před upgradem z Windows 10 na Windows 11 včetně licence, GPT, UEFI, TPM a Secure Boot.">
+<meta property="og:type" content="article">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Přechod z Windows 10 na Windows 11: co zkontrolovat před upgradem","description":"Praktický kontrolní seznam před upgradem z Windows 10 na Windows 11 včetně licence, GPT, UEFI, TPM a Secure Boot.","author":{"@type":"Person","name":"Bc. Jan Bidlo"},"publisher":{"@type":"Organization","name":"PC servis Plzeň - Hodinový ajťák"},"mainEntityOfPage":"https://www.pc-servis-plzen.cz/prechod-z-windows-10-na-windows-11.html"}</script>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>Partyzánská 25, 312 00 Plzeň • návštěva po telefonické domluvě</span><span><a href="tel:+420602352498">602 352 498</a> &nbsp; | &nbsp; <a href="mailto:info@pc-servis-plzen.cz">info@pc-servis-plzen.cz</a></span></div></div>
+<header class="nav"><div class="container"><a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="PC servis Plzeň"><span><span class="brand-title">Hodinový ajťák</span><br><span class="brand-sub">PC servis Plzeň • notebooky • Windows • sítě</span></span></a><nav class="menu"><a href="servis-pocitacu-plzen.html">Servis PC</a><a href="servis-notebooku-plzen.html">Notebooky</a><a href="instalace-windows-11.html">Windows 11</a><a href="zrychleni-pocitace-ssd.html">SSD upgrade</a><a href="cenik.html">Ceník</a><a href="kontakt.html">Kontakt</a><a class="btn yellow" href="tel:+420602352498">602 352 498</a></nav></div></header>
+<section class="subhero"><div class="container"><span class="kicker">Článek a kontrolní seznam</span><h1>Přechod z Windows 10 na Windows 11: co zkontrolovat před upgradem</h1><p>Samotné spuštění instalace je až poslední krok. Nejdříve je potřeba ověřit hardware, způsob startu systému, disk, šifrování, licenci a zálohu dat.</p></div></section>
+<section class="section"><div class="container"><div class="feature">
+<article class="panel" style="max-width:none"><div class="content article-content">
+<h2>Proč přechod neodkládat bez kontroly</h2>
+<p>Běžná podpora Windows 10 skončila 14. října 2025. Počítač sice dál funguje, ale před přechodem na Windows 11 je vhodné zjistit, zda splňuje požadavky a zda upgrade neohrozí data nebo používané programy.</p>
+<h2>1. Procesor, paměť a volné místo</h2>
+<p>Nejprve se ověřuje podporovaný procesor, alespoň 4 GB operační paměti a úložiště s kapacitou nejméně 64 GB. Samotné splnění minima ale nezaručuje svižný provoz; u staršího počítače může dávat smysl rozšíření RAM nebo výměna HDD za SSD. Kompatibilitu lze předběžně prověřit nástrojem Kontrola stavu osobního počítače.</p>
+<h2>2. TPM 2.0 a Secure Boot</h2>
+<p>Windows 11 vyžaduje TPM 2.0 a firmware UEFI s podporou zabezpečeného spouštění. TPM může být v počítači přítomné, ale vypnuté. U desek Intel se často jmenuje PTT, u AMD fTPM. Zapnutí těchto funkcí se provádí v nastavení UEFI konkrétní základní desky.</p>
+<h2>3. UEFI, Legacy BIOS a disk MBR nebo GPT</h2>
+<p>V nástroji Systémové informace lze zjistit, zda Windows startuje v režimu UEFI nebo starším Legacy BIOS. Systémový disk lze zkontrolovat ve Správě disků nebo PowerShellu. Pro moderní start UEFI se používá GPT. Pokud je systém na MBR, lze ho za určitých podmínek převést nástrojem MBR2GPT bez smazání dat, ale nejdříve je nutná kontrola rozložení oddílů a úplná záloha. Pouhé přepnutí BIOSu z Legacy na UEFI bez přípravy může způsobit, že Windows nenastartuje.</p>
+<h2>4. Aktivace a licence Windows</h2>
+<p>Před upgradem se kontroluje edice Windows, stav aktivace a způsob licence. Digitální licenci je vhodné propojit s účtem Microsoft. To je důležité zejména při výměně základní desky, protože po významné změně hardwaru může být nutná opětovná aktivace. Edice musí zůstat stejná, například Pro na Pro. Přenositelnost závisí také na tom, zda jde o licenci Retail, OEM nebo jiný licenční kanál.</p>
+<h2>5. BitLocker a šifrování zařízení</h2>
+<p>Je-li systémový disk šifrovaný, před změnou firmwaru nebo hardwaru je potřeba bezpečně uložit obnovovací klíč. Podle typu zásahu se ochrana dočasně pozastaví. Bez obnovovacího klíče může změna TPM nebo základní desky skončit požadavkem na klíč ještě před spuštěním Windows.</p>
+<h2>6. Záloha dat a stav disku</h2>
+<p>Před upgradem patří důležité dokumenty, fotografie, pošta a další data na jiné fyzické úložiště. Zároveň je rozumné ověřit zdravotní stav SSD nebo HDD a dostatek volného místa. Záloha musí být čitelná a neměla by zůstat pouze na disku, se kterým se pracuje.</p>
+<h2>7. Upgrade, čistá instalace, nebo výměna komponent?</h2>
+<p><strong>Běžný upgrade</strong> zachová programy a data a je vhodný pro zdravou, kompatibilní instalaci. <strong>Čistá instalace</strong> bývá vhodnější u poškozeného, zaneseného nebo nestabilního systému. <strong>Výměna komponent</strong> může zachovat původní instalaci, ale vyžaduje přípravu ovladačů, správný režim řadiče disku a následnou kontrolu aktivace. U velmi starého počítače je někdy rozumnější vyměnit základní desku, procesor a RAM než požadavky obcházet.</p>
+<h2>Kontrolní seznam před zahájením</h2>
+<ul><li>Počítač splňuje hardwarové požadavky Windows 11.</li><li>TPM 2.0 je dostupné a UEFI podporuje Secure Boot.</li><li>Je znám režim BIOSu a styl systémového disku MBR/GPT.</li><li>Windows je aktivovaný a je známá jeho edice i typ licence.</li><li>Je uložený obnovovací klíč BitLockeru, pokud se šifrování používá.</li><li>Důležitá data jsou zálohovaná mimo opravovaný disk.</li><li>Jsou ověřené ovladače a důležité programy.</li></ul>
+<h2>Odborná kontrola a přechod v Plzni</h2>
+<p>Provedu kontrolu kompatibility, licence, UEFI/GPT, TPM, Secure Boot, šifrování a zálohy. Podle stavu počítače doporučím běžný upgrade, čistou instalaci nebo smysluplnou výměnu komponent. Cena kontroly a přechodu začíná na 1 000 Kč; další práce a díly se domlouvají předem.</p>
+<p>Podrobné požadavky uvádí <a href="https://support.microsoft.com/cs-CZ/Windows/Experience/Compatibility/windows-11-system-requirements" rel="noopener">Microsoft – požadavky Windows 11</a>. K převodu disku slouží dokumentace <a href="https://learn.microsoft.com/en-us/windows/deployment/mbr-to-gpt" rel="noopener">Microsoft MBR2GPT</a> a k licenci návod <a href="https://support.microsoft.com/cs-cz/windows/activation/reactivating-windows-after-a-hardware-change" rel="noopener">opětovná aktivace po změně hardwaru</a>.</p>
+<p><strong>Chcete počítač nejdřív prověřit?</strong> Zavolejte na <a href="tel:+420602352498">602 352 498</a> nebo napište na <a href="mailto:info@pc-servis-plzen.cz">info@pc-servis-plzen.cz</a>.</p>
+</div></article>
+<aside class="panel"><h2>Související informace</h2><ul><li><a href="instalace-windows-11.html">Instalace Windows 11</a></li><li><a href="tpm-cip-a-windows-11.html">TPM čip a Windows 11</a></li><li><a href="windows-11-nejde-aktivovat.html">Windows 11 nejde aktivovat</a></li><li><a href="jak-probiha-zaloha-dat.html">Jak probíhá záloha dat</a></li><li><a href="sestaveni-pocitace-z-komponent.html">Sestavení počítače z komponent</a></li><li><a href="cenik.html">Orientační ceník</a></li><li><a href="clanky.html">Všechny články a návody</a></li></ul><a class="btn yellow" href="kontakt.html">Domluvit kontrolu</a></aside>
+</div></div></section>
+<footer class="footer"><div class="container"><div><b>PC servis Plzeň - Hodinový ajťák</b><br>Bc. Jan Bidlo • IČ 87150671 • neplátce DPH</div><div><a href="tel:+420602352498">602 352 498</a> • <a href="mailto:info@pc-servis-plzen.cz">info@pc-servis-plzen.cz</a><br><a href="kontakt.html">Partyzánská 25, 312 00 Plzeň</a></div></div></footer>
+<a class="mobile-call" href="tel:+420602352498">Zavolat: 602 352 498</a>
+</body>
+</html>
